@@ -5,6 +5,14 @@ LABEL description="AIRPRINT FROM SYNOLOGY DSM 7 (HP, SAMSUNG, ETC)"
 
 RUN apt-get update && apt-get install -y \
 	locales \
+	cups-filters \
+	printer-driver-all \
+	printer-driver-cups-pdf \
+	printer-driver-foo2zjs \
+	foomatic-db-compressed-ppds \
+	openprinting-ppds \
+	hpijs-ppds \
+	hp-ppd \
 	brother-lpr-drivers-extra brother-cups-wrapper-extra \
 	printer-driver-splix \
 	printer-driver-gutenprint \
